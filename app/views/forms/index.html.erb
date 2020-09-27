@@ -1,9 +1,12 @@
-<div class="container">
+<div class="container app">
   <div class="begining">
-    <h1>Forms</h1>
+    <div class="container textywonder">
+          <strong>Lista de Espera</strong><br>
+          <span>Consigue 50% de descuento en nuestro primer pedido del año</span>
+    </div>
   </div>
   
-  <table>
+  <table class="headtables">
 
   <div class="headers">
       <thead>
@@ -11,8 +14,9 @@
           <th>Nombre</th>
           <th>Tlf</th>
           <th>Dirección</th>
-          <th>5kg</th>
-          <th>10kg</th>
+          <th>5</th>
+          <th>10</th>
+          <th>Kgs</th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -21,19 +25,38 @@
     <tbody>
      <% @forms.each do |form| %>
        <tr>
-         <td><%= form.name %></td>
-         <td><%= form.phone %></td>
-         <td><%= form.address %></td>
-          <td><%= form.five %></td>
-          <td><%= form.ten %></td>
+         <td><%= form.nombre %></td>
+         <td><%= form.tlf %></td>
+         <td><%= form.direccion %></td>
+          <td><%= form.cinco %></td>
+          <td><%= form.diez %></td>
+          <td class="textright"> <%= form.total %> <i class="far fa-lemon"></i> </td>
+
         </tr>
       <% end %>
     </tbody>
   </div>
 </table>
 
-  <div class="container ending">
-  <h3>paragrah to explain</h3>
-  </div>
+      <div class="signup container">
+        <%= simple_form_for(@form) do |f|%>
+        <%= f.input :nombre %>
+        <%= f.input :tlf %>
+        <%= f.input :direccion %>
+        <%= f.input :cinco %>
+        <%= f.input :diez %>
+        <%= f.button :submit %>
+        
+        <% end %>
+      </div>    
 
+  <div class="container ending">
+  <h3>Naranjas Naranjas arranca la temporada 20/21. ¡Con mucha ilusion de volver! </h3>
+  </div>
+  <div class="container ending">
+  <h4>Le invitamos a que se apunte a <strong>la lista de espera </strong> con nostros para que cuando este la naranjas en su punto optimo de recojido podremos entregarla a su domicilio que nos ha dado. Siempre con un whatsapp de aviso</h4>
+  </div>
+  <div class="container ending">
+    <p>La naranja que le ofrecemos para empezar esta tempora sera la Naranja de Zumo. La oferta incluyara 5 y 10 kilos, a mitad de precio. Si elije las dos taquillas, se llevara 15 kilos mas 1 kg de mandarina de regalo de parte de Naranjas Naranjas! Muchas gracias y que tenga un buen dia!</p>
+  </div>
 </div>

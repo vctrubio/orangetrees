@@ -12,10 +12,44 @@
 @import "components/index";
 @import "pages/index";
 
-.tryouts {
-  background-color: $green;
-}
-
 body {
   background-color: #ff7e00;
+}
+
+.app {
+  border: 1px solid #c3c3c3;
+  align-content: center;
+}
+
+.begining {
+  border: 1px solid #c3c3c3;
+  display: flex;
+  justify-content: center;
+}
+
+.headtables {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+}
+
+.ending {
+  display: flex;
+  justify-content: center;
+}
+
+.signup {
+  border: 1px solid #c3c3c3;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+.textywonder {
+  border: 1px solid #c3c3c3;
+  text-align: center;
+}
+
+.textright {
+  text-align: right;
+  justify-content: space-around;
+  display: flex;
 }
