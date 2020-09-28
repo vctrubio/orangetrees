@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_09_28_140604) do
     t.string "comments"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "pp", default: "images/naranja.png"
+    t.integer "pp"
   end
 
   create_table "users", force: :cascade do |t|

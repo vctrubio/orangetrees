@@ -1,28 +1,47 @@
 <div class="container app maxywidth">
   <div class="begining">
     <div class="container textywonder">
-          <strong>Lista de Espera</strong><br>
-          <span>Consigue 50% de descuento en nuestro primer pedido del año</span>
+          <strong class="whiteplease">Lista de Espera</strong><br>
+          <span>Consigue <strong>50%</strong> de descuento en <span class="fontitalic">nuestro</span> primer pedido del año</span>
     </div>
   </div>
   
   <table class="headtables">
-
-  <div class="headerss undernombre">
-          <th>Nombres</th>
-  </div>
-  <div class="form set-height">
     <tbody>
+      <div class="headerss undernombre">
+        <p>Nombres</p> 
+  </div>
      <% @forms.each do |form| %>
        <tr>
          <td> 
          <div class="container set-me">
          <div class="row titles set-height">
             <div class="col-6 nombress"> <%= form.nombre %></div>
-            <div class="col-3 avatary"> <%= image_tag("naranja.png", style: 'height:45px;width:80px;') %></div>
-            <div class="col-3 imagekilos"> <%= image_tag("scale10kg.png", style: 'height:59px;width:80px;')%></div>        
+            <div class="col-3 avatary"> 
+            <% if form.pp.nil? %>
+              <%= image_tag("naranja.png", style: 'height:45px;width:80px;') %></div>
+            <% elsif form.pp == 1 %>
+              <%= image_tag("arbolavatar.png", style: 'height:45px;width:80px;') %></div>
+            <% elsif form.pp == 2 %>
+              <%= image_tag("rainy.png", style: 'height:45px;width:65px;') %></div>
+            <% elsif form.pp == 3 %>
+              <%= image_tag("ocean.png", style: 'height:45px;width:80px;') %></div>
+            <% elsif form.pp == 4 %>
+              <%= image_tag("tinvierno.png", style: 'height:62px;width:80px;') %></div>
+            <% end %>
+            <div class="col-3 imagekilos"> 
+            <% if form.total ==10 %>
+                <%=image_tag("scale10kg.png", style: 'height:59px;width:80px;')%>
+             <% elsif form.total ==5 %>
+                <%=image_tag("scale5kg.png", style: 'height:59px;width:80px;')%>
+            <% elsif form.total ==15 %>
+                <%=image_tag("scale15kg.png", style: 'height:59px;width:80px;')%>
+            <% else %>
+                <%=image_tag("naranja.png", style: 'height:59px;width:80px;')%>
+            <% end %>    
+            </div>  
+
         </div>  
-          </div>
       
 
 
@@ -36,10 +55,10 @@
         <%= simple_form_for(@form) do |f|%>
         <div class="row">
           <div class="col-6">
-         <%= f.input :nombre %>
+         <%= f.input :nombre, :label => "Ahora te toca a ti", :placeholder => "Nombre" %>
           </div>
          <div class="col-6">
-         <%= f.input :tlf%>
+         <%= f.input :tlf, :placeholder => "676 780 254", :label=> "Contacto" %>
           </div>
         </div>
 
@@ -60,16 +79,16 @@
          </div> 
 
          <div class="row titles">
-            <div class="col-3">los arboles</div>
-            <div class="col-3">la lluvia</div>
-            <div class="col-3">el mar</div>
-            <div class="col-3">la nieve</div>
+            <div class="col-3 fontfamily">los arboles</div>
+            <div class="col-3 fontfamily">la lluvia</div>
+            <div class="col-3 fontfamily">el mar</div>
+            <div class="col-3 fontfamily">la nieve</div>
          </div>
 
          <div class="row ppictures align-content-center">
             <div class="col-3"><%= image_tag("arbolavatar.png", style: 'height:140px;width:90px;') %></div>
-            <div class="col-3"><%= image_tag("lluvia.png", style: 'height:120px;width:55px;') %></div>
-            <div class="col-3"><%= image_tag("ocean.png", style: 'height:120px;width:60px;') %></div>
+            <div class="col-3"><%= image_tag("rainy.png", style: 'height:120px;width:55px;') %></div>
+            <div class="col-3"><%= image_tag("ocean.png", style: 'height:122px;width:60px;') %></div>
             <div class="col-3"><%= image_tag("tinvierno.png", style: 'height:130px;width:60px;') %></div>
          </div>
         <div class="row lastone ">

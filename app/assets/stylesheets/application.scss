@@ -19,19 +19,19 @@ body {
 }
 
 .app {
-  border: 1px solid #c3c3c3;
+  // border: 1px solid #c3c3c3;
   align-content: center;
 }
 
 .begining {
-  border: 1px solid #c3c3c3;
+  // border: 1px solid #c3c3c3;
   display: flex;
   justify-content: center;
 }
 
 .headtables {
   width: 100%;
-  border: 1px solid #c3c3c3;
+  // border: 1px solid #c3c3c3;
 }
 
 .ending {
@@ -40,13 +40,17 @@ body {
 }
 
 .signup {
-  border: 1px solid #c3c3c3;
+  // border: 1px solid #c3c3c3;
   justify-content: space-between;
   display: inline-block;
+  width: 100%;
+  margin-top: 25px;
+  border: solid 5px grey;
+  border-radius: 30px;
 }
 
 .textywonder {
-  border: 1px solid #c3c3c3;
+  // border: 1px solid #c3c3c3;
   text-align: center;
 }
 
@@ -71,9 +75,8 @@ body {
 }
 
 .headerss {
-  padding-left: 50px;
+  padding-left: 12px;
   padding-top: 5px;
-  text-decoration: underline;
 }
 
 .pregunta {
@@ -103,7 +106,13 @@ body {
 
 .titles {
   text-align: left;
-  padding-left: 2px;
+  padding-left: 4px;
+  font-style: oblique;
+  font-size: 16px;
+}
+
+.fontfamily {
+  font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 .imagekilos {
@@ -118,10 +127,6 @@ body {
   text-align: left !important;
   padding-left: 5px !important;
   align-self: center;
-}
-
-.undernombre {
-  border-bottom: solid 1px black;
 }
 
 .set-height {
@@ -139,4 +144,13 @@ body {
 .avatary {
   text-align: right;
   padding-top: 8px;
+}
+
+.whiteplease {
+  color: white;
+}
+
+.fontitalic {
+  font-style: oblique;
+  // font-style: italic;
 }
