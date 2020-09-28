@@ -38,7 +38,7 @@ class FormsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def form_params
-      params.require(:form).permit(:nombre, :tlf, :direccion, :cinco, :diez, :total, :delivered, :comments)
+      params.require(:form).permit(:nombre, :tlf, :direccion, :cinco, :diez, :total, :delivered, :comments, :pp)
     end
 
     def destroy

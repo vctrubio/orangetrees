@@ -13,7 +13,9 @@
 @import "pages/index";
 
 body {
-  background-color: #ff7e00;
+  background-color: #ff9600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .app {
@@ -59,4 +61,82 @@ body {
   width: 4cm;
   justify-content: space-around;
   display: flex;
+}
+
+.pickadate {
+  display: felx;
+  background-color: red;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.headerss {
+  padding-left: 50px;
+  padding-top: 5px;
+  text-decoration: underline;
+}
+
+.pregunta {
+  background-color: pink;
+  padding-left: 20px;
+  font: caption;
+  padding-top: 20px;
+}
+.subb {
+  align-items: center;
+  color: white;
+  display: flex-grow;
+}
+
+.one {
+  background-color: yellow;
+}
+
+.pppicture {
+  width: 5px;
+  height: 5px;
+}
+
+.lastone {
+  padding: 25px;
+}
+
+.titles {
+  text-align: left;
+  padding-left: 2px;
+}
+
+.imagekilos {
+  text-align: right;
+}
+
+.lasty {
+  text-align: center;
+}
+
+.nombress {
+  text-align: left !important;
+  padding-left: 5px !important;
+  align-self: center;
+}
+
+.undernombre {
+  border-bottom: solid 1px black;
+}
+
+.set-height {
+  height: 65px;
+}
+
+.set-me {
+  border: solid 1px black;
+  box-shadow: inset 0px 0px 2px 2px black;
+}
+
+.maxywidth {
+  max-width: 800px;
+}
+.avatary {
+  text-align: right;
+  padding-top: 8px;
 }
