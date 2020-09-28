@@ -29,6 +29,7 @@
             <% elsif form.pp == 4 %>
               <%= image_tag("tinvierno.png", style: 'height:62px;width:80px;') %></div>
             <% end %>
+
             <div class="col-3 imagekilos"> 
             <% if form.total ==10 %>
                 <%=image_tag("scale10kg.png", style: 'height:59px;width:80px;')%>
@@ -63,9 +64,10 @@
         </div>
 
         <div class="row one">
-          <div class="col-2 form-inline pickadate">
+          <div class="col-1 pickadate">
           <%= f.input :cinco, :hint => "5kg",:label => false %>
-
+          </div>
+          <div class="col-1 pickadate">
           <%= f.input :diez, :hint => "10kg", :label => false %>
           </div>
           <div class="col-10">

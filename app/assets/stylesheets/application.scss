@@ -68,9 +68,7 @@ body {
 }
 
 .pickadate {
-  display: felx;
-  background-color: red;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
 }
 
@@ -91,10 +89,6 @@ body {
   display: flex-grow;
 }
 
-.one {
-  background-color: yellow;
-}
-
 .pppicture {
   width: 5px;
   height: 5px;
@@ -107,12 +101,12 @@ body {
 .titles {
   text-align: left;
   padding-left: 4px;
-  font-style: oblique;
   font-size: 16px;
 }
 
 .fontfamily {
   font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 20px;
 }
 
 .imagekilos {
