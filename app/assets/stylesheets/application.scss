@@ -49,7 +49,14 @@ body {
 }
 
 .textright {
-  text-align: right;
+  height: 2cm;
+  width: 2cm;
+  display: flex;
+}
+
+.iconavatar {
+  height: 4cm;
+  width: 4cm;
   justify-content: space-around;
   display: flex;
 }
