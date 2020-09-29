@@ -44,3 +44,7 @@ function activateSearch() {
   var input = document.getElementById("searchy");
   var autobabab = new google.maps.places.Autocomplete(input);
 }
+
+const list = document.querySelector("#playersone");
+
+console.log("Hi there");

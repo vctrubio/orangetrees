@@ -10,9 +10,9 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-      <%cle  = ENV["APIKEY"]%>
+      <% cle  = ENV["GOOGLE_MAPS_API_KEY"]%>
       <%# <%= javascript_include_tag %>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXb1J6wCMXSMApPHJucc7BnbvRudKfB_E&libraries=places&callback=activateSearch"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%cle%>&libraries=places"></script>
 
   </head>
 
