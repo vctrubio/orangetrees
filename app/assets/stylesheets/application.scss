@@ -13,14 +13,15 @@
 @import "pages/index";
 
 body {
-  background-color: #ff9600;
+  background-color: #d65f01;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .app {
   // border: 1px solid #c3c3c3;
-  align-content: center;
+  margin-right: 2px !important;
+  margin-left: 2px !important;
 }
 
 .begining {

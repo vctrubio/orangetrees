@@ -1,8 +1,7 @@
-<div class="container app maxywidth">
+<div class="app">
   <div class="begining">
     <div class="container textywonder">
-          <strong class="whiteplease">Lista de Espera</strong><br>
-          <span>Consigue <strong>50%</strong> de descuento en <span class="fontitalic">nuestro</span> primer pedido del año</span>
+      <%= image_tag("bannernbiggy.png", style: 'height:400px;width:400px;') %>
     </div>
   </div>
   
@@ -53,7 +52,7 @@
 </table>
 
       <div class="signup container">
-        <%= simple_form_for(@form, data: {controller: "maps" }) do |f|%>
+        <%= simple_form_for(@form) do |f|%>
         <div class="row">
           <div class="col-6">
          <%= f.input :nombre, :label => "Ahora te toca a ti", :placeholder => "Nombre" %>
@@ -71,7 +70,7 @@
           <%= f.input :diez, :hint => "10kg", :label => false %>
           </div>
           <div class="col-10">
-          <%= f.input :direccion, :placeholder => 'Direccíon', :label => false %>
+          <%= f.input :direccion, :placeholder => 'Direccíon', :label => false, :id => "searchy" %>
           </div>
         </div>
 
@@ -99,7 +98,9 @@
         <% end %>
       </div>    
 
+
+
   <div class="container lasty">
-    <%= image_tag("n1.png", style: 'height:450px;width:450px;') %>
+    <%= image_tag("bannernbilboard.png", style: 'height:450px;width:450px;') %>
   </div>
 </div>

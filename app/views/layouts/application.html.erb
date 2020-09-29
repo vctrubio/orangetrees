@@ -11,13 +11,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
       <%cle  = ENV["APIKEY"]%>
-      <%# <%= javascript_include_tag %> 
-      <script type="text/javascript" src='https://maps.googleapis.com/maps/api/js?key=<%=cle%>&libraries=places&callback=dispatchMapsEvent', async: true, defer: true, "data-turbolinks-eval": false>
-      </script>
+      <%# <%= javascript_include_tag %>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXb1J6wCMXSMApPHJucc7BnbvRudKfB_E&libraries=places&callback=activateSearch"></script>
+
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
 
     <%= yield %>
