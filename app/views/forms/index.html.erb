@@ -53,7 +53,7 @@
 </table>
 
       <div class="signup container">
-        <%= simple_form_for(@form) do |f|%>
+        <%= simple_form_for(@form, data: {controller: "maps" }) do |f|%>
         <div class="row">
           <div class="col-6">
          <%= f.input :nombre, :label => "Ahora te toca a ti", :placeholder => "Nombre" %>
